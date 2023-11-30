@@ -1,10 +1,7 @@
-# Verwende das offizielle Debian Bullseye Image als Basis
 FROM debian:bullseye
 
-# Setze das Arbeitsverzeichnis
 WORKDIR /app
 
-# Aktualisiere das System und installiere notwendige Pakete
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         gnupg2 \
@@ -20,8 +17,6 @@ RUN apt-get update \
         mysql-server \
     && rm -rf /var/lib/apt/lists/*
 
-# Port 3306 freigeben
 EXPOSE 3306
 
-# Starte den MySQL-Server
 CMD ["mysqld"]
