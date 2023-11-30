@@ -13,7 +13,7 @@ Nun sollten Sie, wenn sie folgenden Link aufsuchen http://localhost:8080/, eine 
 
 Hier wird zunächst der Ordner runtergeladen. Anschließend muss im Terminal dann zu diesem Ordner navigiert werden. Nun wird die "Wordpress-Dockerfile" mit dem Befehl ```docker build -t custom-wordpress ./wordpress-eigenes-image``` gestartet.
 
-Danach muss die "MYSQL-Dockerfile gestartet werden mit dem Befehl ```docker build -t custom-mysql ./mysql-eigenes-image``` und dann taucht eine Fehlermeldung auf.
+Danach muss die "MYSQL-Dockerfile" gestartet werden mit dem Befehl ```docker build -t custom-mysql ./mysql-eigenes-image``` und dann taucht eine Fehlermeldung auf.
 ![Error1](https://github.com/RatteF/Lab3/assets/83348757/9885d4af-33f0-4e80-ba0f-1ee6914c0b92)
 ![Error2](https://github.com/RatteF/Lab3/assets/83348757/c2188056-3a8d-44fa-acb8-3d069e856a2d)
 
